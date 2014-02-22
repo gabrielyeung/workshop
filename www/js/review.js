@@ -22,17 +22,19 @@
     var numberImagesToReview = imagesForReview.length - imgCnt;
 
     if(numberImagesToReview === 0)
-    {
+    { // finished reviewing others
+
       $remainingvotes.css('display', 'none');
 
       showImg('img/good-1.jpg', $reviewimagebox);
 
+      $('#rate-buttons').hide();
+      $('#the-avatar').hide();
       $("#review_for_you").fadeIn();
 
     } else {
 
       showImg(imagesForReview[imgCnt++], $reviewimagebox);
-
       $remainingvotes.html(numberImagesToReview +  ' more votes to see your score');
     }
 

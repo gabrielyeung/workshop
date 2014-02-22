@@ -10,11 +10,12 @@
 
 img.avatar {
     display: block;
-    position: relative;
+    position: fixed;
     border-radius: 3em;
-    margin: auto;
-    top: 470px;
+    bottom: 100px;
     z-index: 100;
+    left: 50%;
+    margin-left: -40px; // half img width to center
 }
 
 .review-box {
@@ -27,8 +28,6 @@ img.avatar {
     left: 0;
     right: 0;
 }
-
-
 
 #rate-buttons {
     position: fixed;
@@ -47,4 +46,11 @@ p {
 
 .semi_opaque_blackness {
     background: rgba(0,0,0, 0.75);
+}
+
+#review_for_you {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    margin-top: -48px;
 }
