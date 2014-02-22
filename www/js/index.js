@@ -49,17 +49,18 @@ else {
 navigator.camera.getPicture(
         function(imageData) {
 //            $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
-        	console.log("data:image/jpeg;base64," + imageData);
+//        	console.log("data:image/jpeg;base64," + imageData);
+//        	$('#content').append("data:image/jpeg;base64," + imageData);
         	
-        	$('#content').append("data:image/jpeg;base64," + imageData);
+        	var largeImage = document.getElementById('largeImage');
+        	largeImage.style.display = 'block';
+        	largeImage.src = "data:image/jpeg;base64," + imageData;
         	
         },
         function() {
             alert('Error taking picture', 'Error');
         },
         options);
-
-  alert('hi');
 }
 
     },

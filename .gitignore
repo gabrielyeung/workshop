@@ -37,3 +37,21 @@ platforms/ios/www/js/index.js
 platforms/ios/Workshop/config.xml
 
 platforms/ios/www/cordova_plugins.js
+
+.classpath
+
+.project
+
+.settings/.jsdtscope
+
+.settings/org.eclipse.jdt.core.prefs
+
+*.component
+
+.settings/org.eclipse.wst.common.project.facet.core.xml
+
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+
+.settings/org.eclipse.wst.jsdt.ui.superType.name
+
+WebContent/META-INF/MANIFEST.MF
