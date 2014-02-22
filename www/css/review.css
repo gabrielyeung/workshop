@@ -1,2 +1,24 @@
 /* review.css */
 @import url("main.css");
+
+
+.see_my_food_box {
+    height: 200px;
+    opacity: 0.5;
+    background:url('img/good-3.jpg');
+}
+
+img.avatar {
+    display: block;
+    position: absolute;
+    right: 1em;
+    bottom: 0.75em;
+    border-radius: 3em;
+}
+
+.review-box {
+    height: 200px;
+    position: relative;
+}
+
+
