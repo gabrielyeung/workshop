@@ -56,25 +56,3 @@ p {
     top: 50%;
     margin-top: -48px;
 }
-
-/* Buttons */
-.buttons {
-    background: rgba(0,0,0, 0.4);
-    padding: 11px;
-    margin: 0;
-}
-.bttn {
-    background: none;
-    padding: 15px 0px !important;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 10em;
-    border-radius: 50px;
-}
-
-.ui-container{
-    bottom: 0px;
-    position: fixed;
-    width: 100%;
-}
