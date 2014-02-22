@@ -7,8 +7,17 @@
 
 /* Buttons */
 .buttons {
-    background: #333;
+    background: rgba(0,0,0, 0.4);
+    padding: 11px;
 }
-    .bttn { background: #777; }
-    .bttn-yay {  }
-    .bttn-nay {  }
+    .bttn {
+	background: #777;
+	text-align: center;
+	text-decoration: none;
+	padding: 30px;
+	border-radius: 100px;
+	color: rgba(255,255,255,0);
+	text-indent: -1000px;
+    }
+    .bttn-yay { background: #ff0099; }
+    .bttn-nay { background: #00ff99; }
