@@ -1,32 +1,42 @@
-var myImage= new Array();
-myImage[0]="img/bad-1.jpg";
-myImage[1]="img/bad-2.jpg";
-myImage[2]="img/bad-3.jpg";
-myImage[3]="img/good-1.jpg";
-myImage[4]="img/good-2.jpg";
-myImage[5]="img/good-3.jpg";
+(function($){ // self invoking function
 
-var imgCnt = 0;
+  var myImage= [];
+  myImage[0]="img/bad-1.jpg";
+  myImage[1]="img/bad-2.jpg";
+  myImage[2]="img/bad-3.jpg";
+  myImage[3]="img/good-1.jpg";
+  myImage[4]="img/good-2.jpg";
+  myImage[5]="img/good-3.jpg";
+  var imgCnt = 0;
+  var $reviewimagebox = $("#review_image_box");
 
-function next(){
-    imgCnt++;
-    document.getElementById("remaing_votes").innerHTML =  4-imgCnt +  " more votes to see your score";
-    if(imgCnt>3)
+  function showImg(imgSrc) {
+    $reviewimagebox.css('background', 'url(' + imgSrc + ')');
+  }
+
+  function next(e){
+    if(e) e.preventDefault();
+
+    $("#remaing_votes").html(4-imgCnt +  ' more votes to see your score');
+
+    if(imgCnt > 3)
     {
-        document.getElementById("see_my_food_box").style.opacity = 1.0;
-        $("#remaing_votes").fadeOut();
-        $("#review_for_you").fadeIn();
+      $("#see_my_food_box").css('opacity', 1.0);
+      $("#remaing_votes").fadeOut();
+      $("#review_for_you").fadeIn();
 
-        if(imgCnt > 5)
-        {
-            $("#review_image_box").fadeOut('fast');
-
-        }
-
-    }
-    document.getElementById("review_image_box").style.background = 'url(' + myImage[imgCnt] + ')';
+      if(imgCnt > 5) {
+        $reviewimagebox.fadeOut('fast');
+      }
     }
 
+    showImg(myImage[imgCnt++]);
+  }
 
+  // attach events
+  $('#yay-bttn').on('click', next);
+  $('#nay-bttn').on('click', next);
 
+  next(); // shows first image
 
+})(jQuery);
