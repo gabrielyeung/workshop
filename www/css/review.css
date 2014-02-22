@@ -29,4 +29,13 @@ img.avatar {
     width: 100%;
 }
 
+p {
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.5em;
+}
 
+.semi_opaque_blackness {
+    background: rgba(0,0,0, 0.75);
+}

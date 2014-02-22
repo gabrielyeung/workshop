@@ -9,6 +9,7 @@
   myImage[5]="img/good-3.jpg";
   var imgCnt = 0;
   var $reviewimagebox = $("#review_image_box");
+  var $remainingvotes = $("#remaining_votes");
 
   function showImg(imgSrc) {
     $reviewimagebox.css('background', 'url(' + imgSrc + ')');
@@ -17,12 +18,12 @@
   function next(e){
     if(e) e.preventDefault();
 
-    $("#remaing_votes").html(4-imgCnt +  ' more votes to see your score');
+    $remainingvotes.html(4-imgCnt +  ' more votes to see your score');
 
     if(imgCnt > 3)
     {
-      $("#see_my_food_box").css('opacity', 1.0);
-      $("#remaing_votes").fadeOut();
+      //$("#see_my_food_box").css('opacity', 1.0);
+      $remainingvotes.fadeOut();
       $("#review_for_you").fadeIn();
 
       if(imgCnt > 5) {
