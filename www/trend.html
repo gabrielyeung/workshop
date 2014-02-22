@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>My TreatYourself Trends</title>
+
+<style>
+body h1 {
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  font-size:28px;
+  color:#0065b8;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+}
+
+canvas {
+  display:block;
+}
+button.btn {
+font-size:24px;
+margin-left: 10px;
+}
+
+.btn-block {
+display: block;
+width: 320px;
+padding-left: 0;
+padding-right: 0;
+}
+.btn-lg, .btn-group-lg>.btn {
+padding: 10px 16px;
+font-size: 18px;
+line-height: 1.33;
+border-radius: 6px;
+}
+.btn-primary {
+color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+}
+.btn {
+display: inline-block;
+margin-bottom: 0;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+color: #fff;
+background-color: #3276b1;
+border-color: #285e8e;
+}
+.btn:hover, .btn:focus {
+color: #333;
+text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+<!-- 
+    <div style="width:720px; height:1280px; background-image:url('img/good-1.jpg'); opacity:0.4;">
+ -->
+
+    <div>
+        <h1>My TreatYourself Trends</h1>
+        <canvas id="myChart" height="180px" width="360px"></canvas>
+
+        <canvas id="myRadarChart" height="280px" width="300px"></canvas>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Unlock My Rating</button>
+    </div>
+
+        <script type="text/javascript" src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/seeTrend.js"></script>
+
+</body>
+</html>
