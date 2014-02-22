@@ -33,3 +33,7 @@ platforms/ios/www/cordova_plugins.js
 platforms/ios/www/index.html
 
 platforms/ios/www/js/index.js
+
+platforms/ios/Workshop/config.xml
+
+platforms/ios/www/cordova_plugins.js
