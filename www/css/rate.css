@@ -19,3 +19,42 @@
 	font-size: 75px;
 	border-radius: 50px;
     }
+
+
+    .ui-container{
+        bottom: 0px;
+        position: fixed;
+        width: 100%;
+    }
+
+    #bttn-tweet{
+
+    }
+
+    #tweet-box{
+
+    }
+    #tweet-yes{
+        color: deepskyblue;
+    }
+
+    #tweet-no{
+        color: darkgrey;
+    }
+
+    #tweet-box-inside{
+        border-top: solid 1px ghostwhite;
+        width: 200px;
+        height: 84px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .center-float{
+        vertical-align: bottom;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
