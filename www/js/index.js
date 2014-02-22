@@ -82,3 +82,21 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+
+$( "#tweet-box-inside" ).click(function() {
+    $( "#tweet-yes" ).toggle( "fast" );
+    $( "#tweet-no" ).toggle( "fast", function (){
+        if($("#tweet-yes").css('display')=='none')
+        {
+            $("#bttn-tweet").css('color','darkgrey');
+        }
+        else
+        {
+            $("#bttn-tweet").css('color','deepskyblue');
+        }
+    } );
+
+
+
+});

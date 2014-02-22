@@ -7,8 +7,3 @@
  */
 
 
-$( "#bttn-tweet" ).click(function() {
-    $( "#tweet-yes" ).toggle( "fast" );
-    $( "#tweet-no" ).toggle( "fast");
-
-});

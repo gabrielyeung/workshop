@@ -24,7 +24,7 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="css/rate.css" />
+        <!--<link rel="stylesheet" type="text/css" href="css/rate.css" />-->
 
         <title>Home</title>
     </head>
@@ -47,7 +47,13 @@
                     <a class="bttn bttn-nay clm-1-2 icon-donut"href="trend.html"></a>
                     <a class="bttn bttn-yay clm-1-2 icon-apple"href="trend.html"></a>                    
                     <!-- Twitter Icon Reference -->
-                    <!-- <a href="#" class="bttn clm-1-2 icon-twitter"></a> -->
+                    <div id="tweet-box" class="clm-100 twt">
+                        <div id="tweet-box-inside" class="center-float">
+                            <h1 id="tweet-yes" class="twt center-float"> ✓</h1>&nbsp;
+                            <a id="bttn-tweet" class="center-float icon-twitter"></a>
+                            <h1 id="tweet-no" class="twt center-float" style="display: none"> X </h1>
+                        </div>
+                    </div>
                 </div>
             </section>
        </div>
