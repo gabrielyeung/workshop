@@ -61,7 +61,9 @@ navigator.camera.getPicture(
 
 
           // show yay nay buttons
-          $('#yesNoButtonContainer').attr('display', 'block');
+          var $yesNoButtonContainer = $('#yesNoButtonContainer');
+          $yesNoButtonContainer.css('display', 'block');
+          $yesNoButtonContainer.css('z-index', '100');
         	
         },
         function() {
