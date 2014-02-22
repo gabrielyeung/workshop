@@ -34,42 +34,35 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-if (!navigator.camera) {
-        alert("Camera API not supported", "Error");
-        return;
-    }
-else {
-    var options =   {   quality: 35,
-                        destinationType: Camera.DestinationType.DATA_URL,
-                        sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
-                        encodingType: 0,     // 0=JPG 1=PNG
-                        targetWidth: 720,
-                        targetHeight: 1280,
-                        correctOrientation: true
-                    };
 
+        if (!navigator.camera) {
+            alert("Camera API not supported", "Error");
+            return;
+        }
+        else {
+            var options = {   
+                quality: 35,
+                destinationType: Camera.DestinationType.DATA_URL,
+                sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
+                encodingType: 0,     // 0=JPG 1=PNG
+                targetWidth: 720,
+                targetHeight: 1280,
+                correctOrientation: true
+            };
+            navigator.camera.getPicture(
+                function(imageData) {
+                    var largeImage = document.getElementById('largeImage');
+        	        largeImage.style.display = 'block';
+        	        largeImage.src = "data:image/jpeg;base64," + imageData;
 
-navigator.camera.getPicture(
-        function(imageData) {
-//            $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
-//        	console.log("data:image/jpeg;base64," + imageData);
-//        	$('#content').append("data:image/jpeg;base64," + imageData);
-        	
-        	var largeImage = document.getElementById('largeImage');
-        	largeImage.style.display = 'block';
-        	largeImage.src = "data:image/jpeg;base64," + imageData;
-
-
-          // show yay nay buttons
-          $('#yesNoButtonContainer').attr('display', 'block');
-        	
-        },
-        function() {
-            alert('Error taking picture', 'Error');
-        },
-        options);
-}
-
+                    // show yay nay buttons
+                    $('#yesNoButtonContainer').attr('display', 'block');
+                },
+                function() {
+                    alert('Error taking picture', 'Error');
+                },
+                options);
+        }
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
