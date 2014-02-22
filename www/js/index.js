@@ -58,6 +58,10 @@ navigator.camera.getPicture(
         	var largeImage = document.getElementById('largeImage');
         	largeImage.style.display = 'block';
         	largeImage.src = "data:image/jpeg;base64," + imageData;
+
+
+          // show yay nay buttons
+          $('#yesNoButtonContainer').attr('display', 'block');
         	
         },
         function() {
