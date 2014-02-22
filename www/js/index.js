@@ -57,9 +57,8 @@ var app = {
         	        $img.attr('src', "data:image/jpeg;base64," + imageData).stop(true,true).hide().fadeIn();
 
                     // show yay nay buttons
-                    var $yesNoButtonContainer = $('#yesNoButtonContainer');
-                    $yesNoButtonContainer.css('display', 'block');                    
-                    $yesNoButtonContainer.css('z-index', '100');
+                    var $yesNoButtonContainer = $('#jsButtons');
+                    $yesNoButtonContainer.removeClass('out-of-view');                   
                     
                     // Add animation class in here
 
