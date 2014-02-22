@@ -5,19 +5,20 @@
     background: url('img/good-3.jpg');
     width: 100%;
     position: fixed;
-    bottom: 85px;
+    top: 0;
 }
 
 img.avatar {
     display: block;
-    position: absolute;
-    right: 0.5em;
-    top: 0.25em;
+    position: relative;
     border-radius: 3em;
+    margin: auto;
+    top: 470px;
+    z-index: 100;
 }
 
 .review-box {
-    height: 535px;
+    height: 640px;
     position: relative;
     background-repeat: no-repeat;
 }
@@ -26,22 +27,17 @@ img.avatar {
 
 #rate-buttons {
     position: fixed;
-    background: none !important;
-    padding: 0 !important;
     margin: 0;
     bottom: 0;
     width: 100%;
-}
-
-#rate-buttons a {
-    color: black;
 }
 
 p {
     text-align: center;
     color: white;
     padding: 1.5em;
-    font-size: 1.25em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 .semi_opaque_blackness {

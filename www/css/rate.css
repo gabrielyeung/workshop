@@ -9,10 +9,11 @@
 .buttons {
     background: rgba(0,0,0, 0.4);
     padding: 11px;
+    margin: 0;
 }
 .bttn {
 	background: none;
-	padding: 15px 0px;
+	padding: 15px 0px !important;
 	color: white;
 	text-align: center;
 	text-decoration: none;
