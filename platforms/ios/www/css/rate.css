@@ -1,0 +1,14 @@
+/* rate.css */
+@import url("main.css");
+
+.pic {
+    background: url(../img/good-1.jpg) no-repeat center center fixed;
+}
+
+/* Buttons */
+.buttons {
+    background: #333;
+}
+    .bttn { background: #777; }
+    .bttn-yay {  }
+    .bttn-nay {  }
