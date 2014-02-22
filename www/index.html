@@ -30,32 +30,35 @@
     </head>
     <body>
 
-    <div class="app">
+        <div class="app">
+            <div id="deviceready" class="blink" style="display:none;">
+            <!-- WARNING: no idea why, but the app needs this div -->
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
 
-        <div id="deviceready" class="blink" style="display:none;">
-        <!-- WARNING: no idea why, but the app needs this div -->
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+            <div class="pic-container">
+                <img style="" id="largeImage" src="img/good-1.jpg" />
+            </div>
+
+            <section id="yesNoButtonContainer" class="ui-container">
+                <div class="buttons grd">
+                    <a class="bttn bttn-yay clm-1-2"href="review.html">Yay</a>
+                    <a class="bttn bttn-nay clm-1-2"href="review.html">Nay</a>
+                </div>
+            </section>
+
+            <canvas id="myChart" height="300" width="720" style="z-index:2;"></canvas>
         </div>
-
-        <div class="pic-container">
-            <img style="" id="largeImage" src="img/good-1.jpg" />
-        </div>
-
-      <section id="yesNoButtonContainer" class="ui-container">
-        <div class="buttons grd">
-          <a class="bttn bttn-yay clm-1-2"href="review.html">Yay</a>
-          <a class="bttn bttn-nay clm-1-2"href="review.html">Nay</a>
-        </div>
-      </section>
-
-   </div>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/Chart.min.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/seeTrend.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
+
     </body>
 </html>
