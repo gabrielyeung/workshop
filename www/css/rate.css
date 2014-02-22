@@ -10,8 +10,7 @@
     background: rgba(0,0,0, 0.4);
     padding: 11px;
 }
-    .bttn {
-<<<<<<< HEAD
+.bttn {
 	background: none;
 	padding: 15px 0px;
 	color: white;
@@ -19,53 +18,42 @@
 	text-decoration: none;
 	font-size: 75px;
 	border-radius: 50px;
-    }
+}
 
+.ui-container{
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
 
-    .ui-container{
-        bottom: 0px;
-        position: fixed;
-        width: 100%;
-    }
+#bttn-tweet{
 
-    #bttn-tweet{
+}
 
-    }
+#tweet-box{
 
-    #tweet-box{
+}
+#tweet-yes{
+    color: deepskyblue;
+}
 
-    }
-    #tweet-yes{
-        color: deepskyblue;
-    }
+#tweet-no{
+    color: darkgrey;
+}
 
-    #tweet-no{
-        color: darkgrey;
-    }
+#tweet-box-inside{
+    border-top: solid 1px ghostwhite;
+    width: 200px;
+    height: 84px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    #tweet-box-inside{
-        border-top: solid 1px ghostwhite;
-        width: 200px;
-        height: 84px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.center-float{
+    vertical-align: bottom;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
-    .center-float{
-        vertical-align: bottom;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-=======
-    	background: none;
-    	padding: 15px 0px;
-    	color: white;
-    	text-align: center;
-    	text-decoration: none;
-    	font-size: 75px;
-    	border-radius: 50px;
-    }
->>>>>>> cbd1c3e65bcab306746305b49ecbff0daba98432
+}
