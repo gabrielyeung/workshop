@@ -2,6 +2,8 @@
 *.class
 */android/*
 
+platforms/ios/*
+
 .idea/scopes/scope_settings.xml
 
 .idea/workspace.xml
