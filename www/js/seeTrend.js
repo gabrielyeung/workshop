@@ -46,6 +46,5 @@ var getRadarChart = function() {
     var myRadar = new Chart(ctx).Radar(data);
 }
 
-
 getLineChart();
 getRadarChart();
