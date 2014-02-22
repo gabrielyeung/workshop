@@ -57,3 +57,7 @@ platforms/ios/www/cordova_plugins.js
 .settings/org.eclipse.wst.jsdt.ui.superType.name
 
 WebContent/META-INF/MANIFEST.MF
+
+*.patch
+
+*.iws
