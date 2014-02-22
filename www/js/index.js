@@ -57,8 +57,12 @@ var app = {
 
                     // show yay nay buttons
                     var $yesNoButtonContainer = $('#yesNoButtonContainer');
-                    $yesNoButtonContainer.css('display', 'block');
+                    $yesNoButtonContainer.css('display', 'block');                    
                     $yesNoButtonContainer.css('z-index', '100');
+                    
+                    // Add animation class in here
+
+
                 },
                 function() {
                     alert('Error taking picture', 'Error');
