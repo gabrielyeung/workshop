@@ -51,14 +51,19 @@ var app = {
             };
             navigator.camera.getPicture(
                 function(imageData) {
-                    var largeImage = document.getElementById('largeImage');
-        	        largeImage.style.display = 'block';
-        	        largeImage.src = "data:image/jpeg;base64," + imageData;
+
+        	        var $img = $('#largeImage');
+        	        $img.css('display', 'block');
+        	        $img.attr('src', "data:image/jpeg;base64," + imageData).stop(true,true).hide().fadeIn();
 
                     // show yay nay buttons
                     var $yesNoButtonContainer = $('#yesNoButtonContainer');
-                    $yesNoButtonContainer.css('display', 'block');
+                    $yesNoButtonContainer.css('display', 'block');                    
                     $yesNoButtonContainer.css('z-index', '100');
+                    
+                    // Add animation class in here
+
+
                 },
                 function() {
                     alert('Error taking picture', 'Error');

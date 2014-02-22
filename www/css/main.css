@@ -48,10 +48,9 @@
 .grd-pad [class*='clm-']:last-of-type { padding-right: 11px; }
 
 
-
 /* base UI */
 .content {
-
+  position: relative;
 }
 
 /* Picture container */
@@ -111,3 +110,17 @@
 .icon-apple:before { content: "\e603"; }
 .icon-strawberry:before { content: "\e601"; }
 .icon-hamburger:before { content: "\e602"; }
+
+
+/* Animation Classes */
+.out-of-view {
+  -webkit-transition: -webkit-transform 180ms ease-out;
+  -moz-transition: -moz-transform 180ms ease-out;
+  -o-transition: -o-transform 180ms ease-out;
+  transition: transform 180ms ease-out;
+  -webkit-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}

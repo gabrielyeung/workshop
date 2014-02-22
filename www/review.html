@@ -5,42 +5,38 @@
   <meta name="format-detection" content="telephone=no" />
   <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+  <link rel="stylesheet" type="text/css" href="css/rate.css" />
   <link rel="stylesheet" type="text/css" href="css/review.css" />
   <title>Review.</title>
 </head>
 <body>
 <div class="app">
+
   <div id="content">
-      <img src="img/logo.png" style="margin-bottom: -80px; z-index:-1; position: relative" >
-      <div style="margin-bottom: 100px; position: relative">
-      <span>
-        <img style="display: inline; float: left;" src="img/icon-fb.png">
-          <a href="twitter.html">
-              <img style="display: inline; float: left;" src="img/icon-twtr.png">
-          </a>
-        <img style="display: inline; float: left;" src="img/icon-instagram.png">
-        <img style="display: inline; float: left;" src="img/icon-tmblr.png">
-      </span>
-      </div>
+      <div id="review_image_box" class="review-box">
 
-      <div id="review_image_box" style="height: 200px;" >
+          <img class="avatar" src="img/avatars/tom.jpeg" />
 
-          <a href="#" onclick="next();return false;"> YAY </a>
-          <a href="#" onclick="next();return false;" style="float: right;"> NAY </a>
+          <!--<a href="#" > YAY </a>-->
+          <!--<a href="#" style="float: right;"> NAY </a>-->
+
+            <div class="buttons grd">
+              <a id="yay-bttn" class="bttn bttn-yay clm-1-2 icon-apple"href="review.html"></a>
+              <a id="nay-bttn" class="bttn bttn-nay clm-1-2 icon-donut"href="review.html"></a>
+            </div>
 
 
       </div>
 
 
 
-      <div id="see_my_food_box" style="height: 200px; opacity: 0.5; background:url('img/good-3.jpg') ">
-          <!--<img src="img/good-3.jpg" style="width: 100%; ">-->
+      <div id="see_my_food_box" class="see_my_food_box">
 
           <div class="transbox">
-              <h1 id="remaing_votes"></h1>
-              <h1 id="review_for_you" style="display: none">Awesome! 8 out of 9 people agree with your ratings. It's healthy!</h1>
+              <p id="remaining_votes" class="semi_opaque_blackness"></p>
+              <p id="review_for_you" class="semi_opaque_blackness" style="display: none">Awesome! 8 out of 9 people agree with your ratings. It's healthy!</p>
           </div>
-
       </div>
 
 
@@ -50,8 +46,8 @@
 
 </div>
 <script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/review.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/review.js"></script>
 
 <script type="text/javascript">
 app.initialize();
