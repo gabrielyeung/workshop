@@ -7,8 +7,8 @@ var getLineChart = function() {
             {
                 fillColor : "rgba(151,187,205,0.5)",
                 strokeColor : "rgba(151,187,205,1)",
-                pointColor : "rgba(151,187,205,1)",
-                pointStrokeColor : "#fff",
+                pointColor : "rgba(151,187,205,0.2)",
+                pointStrokeColor : "rgba(151,187,205,1)",
                 data : [3,6,8,7,6,9,11,13,14,18,19,15,14,15]
             }
         ]
@@ -27,18 +27,18 @@ var getRadarChart = function() {
 			labels : ["Breakfast","Snack","Lunch","Happy Hour","Dinner","Munch","Late Night"],
 			datasets : [
 				{
-					fillColor : "rgba(220,220,220,0.5)",
+					fillColor : "rgba(184,0,0,0.15)",
 					strokeColor : "rgba(220,220,220,1)",
-					pointColor : "rgba(220,220,220,1)",
-					pointStrokeColor : "#fff",
-					data : [65,59,90,81,56,55,40]
+					pointColor : "rgba(184,0,0,0.2)",
+					pointStrokeColor : "rgba(184,0,0,0.2)",
+					data : [25,59,40,81,56,55,80]
 				},
 				{
 					fillColor : "rgba(71,122,0,0.5)",
 					strokeColor : "rgba(71,122,0,0.6)",
-					pointColor : "rgba(151,187,205,1)",
-					pointStrokeColor : "#fff",
-					data : [28,48,40,19,96,27,100]
+					pointColor : "rgba(71,122,0,0.6)",
+					pointStrokeColor : "rgba(71,122,0,0.6)",
+					data : [38,48,70,19,96,27,30]
 				}
 			]
 		};
