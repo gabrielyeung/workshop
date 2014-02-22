@@ -24,7 +24,7 @@ var getLineChart = function() {
 
 var getRadarChart = function() {
 	var data = {
-			labels : ["Breakfast","Lunch","A","B","Dinner","X","Late Night"],
+			labels : ["Breakfast","Snack","Lunch","Happy Hour","Dinner","Munch","Late Night"],
 			datasets : [
 				{
 					fillColor : "rgba(220,220,220,0.5)",
