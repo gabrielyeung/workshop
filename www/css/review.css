@@ -1,7 +1,6 @@
 /* review.css */
 @import url("main.css");
 
-
 .see_my_food_box {
     height: 200px;
     opacity: 0.5;
@@ -17,8 +16,9 @@ img.avatar {
 }
 
 .review-box {
-    height: 200px;
+    height: 430px;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .buttons {
