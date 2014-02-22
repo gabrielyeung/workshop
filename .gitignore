@@ -2,7 +2,7 @@
 *.class
 */android/*
 
-platforms/ios/*
+*platforms/ios/*
 
 .idea/scopes/scope_settings.xml
 
