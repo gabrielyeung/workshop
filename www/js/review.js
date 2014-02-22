@@ -6,20 +6,25 @@ myImage[3]="img/good-1.jpg";
 myImage[4]="img/good-2.jpg";
 myImage[5]="img/good-3.jpg";
 
-var ImageCnt = 0;
+var imgCnt = 0;
 
 function next(){
-    ImageCnt++;
-    document.getElementById("remaing_votes").innerHTML =  4-ImageCnt +  " more votes to see your score";
-    if(ImageCnt>3)
+    imgCnt++;
+    document.getElementById("remaing_votes").innerHTML =  4-imgCnt +  " more votes to see your score";
+    if(imgCnt>3)
     {
-        document.getElementById("review_image_box").style.opacity = 0.2;
-        document.getElementById("see_votes_box").style.opacity = 0.9;
-        document.getElementById("remaing_votes").style.display="none";
+        document.getElementById("see_my_food_box").style.opacity = 1.0;
+        $("#remaing_votes").fadeOut();
+        $("#review_for_you").fadeIn();
 
+        if(imgCnt > 5)
+        {
+            $("#review_image_box").fadeOut('fast');
+
+        }
 
     }
-    document.getElementById("review_image_box").style.background = 'url(' + myImage[ImageCnt] + ')';
+    document.getElementById("review_image_box").style.background = 'url(' + myImage[imgCnt] + ')';
     }
 
 
