@@ -28,7 +28,7 @@
 
       showImg('img/good-1.jpg', $reviewimagebox);
 
-      $('#rate-buttons').hide();
+      $('#page3 #rate-buttons').hide();
       $('#the-avatar').hide();
       $("#review_for_you").fadeIn();
 

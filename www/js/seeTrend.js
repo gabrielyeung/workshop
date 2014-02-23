@@ -17,7 +17,9 @@ var getLineChart = function() {
         scaleOverride: true,
         scaleSteps: 4,
         scaleStepWidth: 5,
-        scaleStartValue: 0
+        scaleStartValue: 0,
+        scaleFontStyle : "bold",
+        scaleFontSize : 24
     };
     var myLine = new Chart(document.getElementById("myChart").getContext("2d")).Line(lineChartData, lineCharOptions);
 }
@@ -42,8 +44,12 @@ var getRadarChart = function() {
 				}
 			]
 		};
+    var options = {
+            scaleFontStyle : "bold",
+            scaleFontSize : 24
+        };
     var ctx = $("#myRadarChart").get(0).getContext("2d");
-    var myRadar = new Chart(ctx).Radar(data);
+    var myRadar = new Chart(ctx).Radar(data, options);
 }
 
 getLineChart();

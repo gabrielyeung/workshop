@@ -9,6 +9,37 @@
         <link rel="stylesheet" type="text/css" href="css/rate_buttons.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 
+        <link rel="stylesheet" type="text/css" href="css/review.css" />
+
+<style>
+
+#page2 canvas {
+  display:block;
+  padding: 1em;
+}
+#page2 canvas.lineChart {
+  display: block;
+  margin-top: 50px;
+}
+#page2 canvas.radarChart {
+  margin-left: 25px;
+  position: relative;
+  top: -20px;
+}
+
+#page2 #unlockRating {
+text-align: center;
+color: white;
+padding: 1.5em;
+font-size: 2em;
+line-height: 1.5em;
+text-transform: none;
+text-decoration: none;
+}
+
+</style>
+
+
         <title>Home</title>
     </head>
     <body>
@@ -20,30 +51,68 @@
                 <p class="event received">Device is Ready</p>
             </div>
 
+<div id="page1">
             <div class="pic-container">
-                <img id="largeImage" src="img/good-1.jpg" />
+                <img id="largeImage" src="img/good-1.jpg" style="width:100%"/>
             </div>
 
             <!-- add class 'out-of-view' to hide -->
-          <div id="rate-buttons" class="buttons grd">
-            <a class="bttn bttn-nay clm-1-2 icon-donut"href="trend.html"></a>
-            <a class="bttn bttn-yay clm-1-2 icon-apple"href="trend.html"></a>
-            <!-- Twitter Icon Reference -->
-            <div id="tweet-box" class="clm-100 twt">
+            <div id="rate-buttons" class="buttons grd">
+              <a class="bttn bttn-nay clm-1-2 icon-donut" ></a>
+              <a class="bttn bttn-yay clm-1-2 icon-apple" ></a>
+              <!-- Twitter Icon Reference -->
+              <div id="tweet-box" class="clm-100 twt">
                 <div id="tweet-box-inside" class="center-float">
                     <!--<h1 id="tweet-yes" class="twt center-float"> ✓</h1>&nbsp;-->
                     <a id="bttn-tweet" class="center-float icon-twitter"></a>
                     <!--<h1 id="tweet-no" class="twt center-float" style="display: none"> X </h1>-->
                 </div>
+              </div>
             </div>
-          </div>
-       </div>
+</div>
+<div id="page2" class="hide">
+        <canvas style="margin-left:40px; margin-top:150px;" class="lineChart" id="myChart" height="400px" width="1000px"></canvas>
+        <canvas style="margin-left:150px; margin-top:65px;" class="radarChart" id="myRadarChart" height="800px" width="800px"></canvas>
+        
+  		    <section class="ui-container" style="background:rgba(0,0,0, 0.75);">
+                <div id="unlockRating" style="font-size:64px;" class="buttons grd">
+                    Unlock Rating
+                </div>
+            </section>
+</div>
+<div id="page3" class="hide">
+      <div id="review_image_box" class="review-box">
+
+        <div id="see_my_food_box" class="see_my_food_box">
+
+            <p id="remaining_votes" style="font-size:48px;" class="semi_opaque_blackness"></p>
+            <p id="review_for_you" class="semi_opaque_blackness" style="display:none; font-size:48px;" >
+              You rated this Healthy!
+              <br />
+              8/10 of your friends agree
+            </p>
+
+        </div>
+
+        <img id="the-avatar" class="avatar" src="img/avatars/tom.jpeg" />
+        <div id="rate-buttons" class="buttons grd">
+          <a id="nay-bttn" class="bttn bttn-nay clm-1-2 icon-donut"href="review.html"></a>
+          <a id="yay-bttn" class="bttn bttn-yay clm-1-2 icon-apple"href="review.html"></a>
+        </div>
+
+      </div>
+</div>
+
+        </div>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/fastclick.js"></script>
         <script type="text/javascript" src="js/jquery.color.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="js/seeTrend.js"></script>
+        <script type="text/javascript" src="js/review.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>

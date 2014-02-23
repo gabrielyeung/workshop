@@ -148,6 +148,10 @@ h1 {
 
 }
 
+.hide{
+display:none;
+}
+
 
 .pic {
     background: url(../img/good-1.jpg) no-repeat center center fixed;

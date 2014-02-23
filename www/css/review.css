@@ -55,4 +55,5 @@ p {
     width: 100%;
     top: 50%;
     margin-top: -48px;
+    text-transform:none;
 }

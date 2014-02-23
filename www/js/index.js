@@ -116,6 +116,16 @@ $( "#tweet-box-inside" ).click(function() {
 });
 
 
+$( "#page1 a.icon-donut, #page1 a.icon-apple" ).click(function() {
+	$('#page1').addClass('hide');
+	$('#page2').removeClass('hide');
+});
+$( "#page2 #unlockRating" ).click(function() {
+	$('#page2').addClass('hide');
+	$('#page3').removeClass('hide');
+});
+
+
 
 $(function() {
     FastClick.attach(document.body);
