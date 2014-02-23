@@ -85,17 +85,28 @@ var app = {
 
 
 $( "#tweet-box-inside" ).click(function() {
-    $( "#tweet-yes" ).toggle( "fast" );
-    $( "#tweet-no" ).toggle( "fast", function (){
-        if($("#tweet-yes").css('display')=='none')
+//    $( "#tweet-yes" ).toggle( "fast" );
+//    $( "#tweet-no" ).toggle( "fast", function (){
+        if($("#bttn-tweet").css('color')=='rgb(0, 191, 255)')
         {
-            $("#bttn-tweet").css('color','darkgrey');
+            $("#bttn-tweet").animate(
+                {
+                    fontSize: "75px",
+                    color: "#C8C8C8"
+                }
+            );
         }
         else
         {
-            $("#bttn-tweet").css('color','deepskyblue');
+            $("#bttn-tweet").animate(
+                {
+                    fontSize: "90px",
+                    color: "#00BFFF"
+                }
+            );
+
         }
-    } );
+//    } );
 
 
 
