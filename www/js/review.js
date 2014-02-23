@@ -2,11 +2,11 @@
 
   var imagesForReview= [];
   // "img/bad-1.jpg"; dont use. not big enough
+  imagesForReview.push("img/good-3.jpg");
   imagesForReview.push("img/bad-2.jpg");
   imagesForReview.push("img/good-1.jpg");
   imagesForReview.push("img/bad-3.jpg");
   imagesForReview.push("img/good-2.jpg");
-  imagesForReview.push("img/good-3.jpg");
 
   var imgCnt = 0;
   var $reviewimagebox = $("#review_image_box");
