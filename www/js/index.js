@@ -87,12 +87,13 @@ var app = {
 $( "#tweet-box-inside" ).click(function() {
 //    $( "#tweet-yes" ).toggle( "fast" );
 //    $( "#tweet-no" ).toggle( "fast", function (){
-        if($("#bttn-tweet").css('color')=='rgb(0, 191, 255)')
+        if($("#bttn-tweet").css('color')=='rgb(200, 200, 200)')
         {
             $("#bttn-tweet").animate(
                 {
-                    fontSize: "75px",
-                    color: "#C8C8C8"
+                    fontSize: "150px",
+                    color: "#00BFFF",
+                    top: "-25px"
                 }
             );
         }
@@ -100,8 +101,10 @@ $( "#tweet-box-inside" ).click(function() {
         {
             $("#bttn-tweet").animate(
                 {
-                    fontSize: "90px",
-                    color: "#00BFFF"
+                    fontSize: "130px",
+                    color: "#C8C8C8",
+                    top:"0px"
+
                 }
             );
 
