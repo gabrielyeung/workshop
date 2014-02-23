@@ -94,7 +94,7 @@ $( "#tweet-box-inside" ).click(function() {
                     fontSize: "150px",
                     color: "#00BFFF",
                     top: "-25px"
-                }
+                }, 50
             );
         }
         else
@@ -104,8 +104,7 @@ $( "#tweet-box-inside" ).click(function() {
                     fontSize: "130px",
                     color: "#C8C8C8",
                     top:"0px"
-
-                }
+                }, 50
             );
 
         }
