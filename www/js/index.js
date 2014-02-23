@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -87,8 +88,9 @@ var app = {
 $( "#tweet-box-inside" ).click(function() {
 //    $( "#tweet-yes" ).toggle( "fast" );
 //    $( "#tweet-no" ).toggle( "fast", function (){
-        if($("#bttn-tweet").css('color')=='rgb(200, 200, 200)')
+        if(window.localStorage.getItem("twitterValue") == "0")
         {
+            window.localStorage.setItem("twitterValue", "1");
             $("#bttn-tweet").animate(
                 {
                     fontSize: "150px",
@@ -99,6 +101,7 @@ $( "#tweet-box-inside" ).click(function() {
         }
         else
         {
+            window.localStorage.setItem("twitterValue", "0");
             $("#bttn-tweet").animate(
                 {
                     fontSize: "130px",
@@ -110,6 +113,10 @@ $( "#tweet-box-inside" ).click(function() {
         }
 //    } );
 
+});
 
 
+
+$(function() {
+    FastClick.attach(document.body);
 });
